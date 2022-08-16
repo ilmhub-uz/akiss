@@ -1,3 +1,9 @@
+@using Google.Apis.Auth.OAuth2
+@using Google.Apis.Drive.v3
+@using Google.Apis.Json
+@using Google.Apis.Services
+@using Google.Apis.Upload
+@using Newtonsoft.Json
 @inject IStringLocalizer<Resources.TeachersComponent> localizer
 @inject IJSRuntime JSRuntime
 @inject NavigationManager NavigationManager
@@ -9,16 +15,20 @@
             <h2>@localizer["teachersection"]</h2>
             <h3>@((MarkupString)localizer["ourteachers"].ToString()) </h3>
             <p>@localizer["teachersubtitle"]</p>
-        </div>
-        <div class="row">
             <TeachersInUs></TeachersInUs>
         </div>
         <div class="text-center">
             <button class="btn btn-primary" href="javascript:function() { return false; }"
                 @onclick="GoToTeachers">@localizer["registration"]</button>
+            <br><br><br>
+            <h2><b>@localizer["Teachers About"]</b></h2>
+            @* <img src="logoal.png" class="teachers-img" width="300" height="40" alt=""> *@
         </div>
     </div>
 </section>
+
+
+
 
 @code {
     private async Task GoToTeachers()

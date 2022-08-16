@@ -1888,3 +1888,192 @@ section {
   border: 2px solid aliceblue !important;
 }
 
+.license-number{
+  position: relative;
+  top: 25px;
+  color: #777777
+}
+
+.footer-text-license{
+  color: slateblue;
+}
+
+.rounded-start{
+  width: 250px;
+  height: 350px;
+}
+
+.teachers-img{
+  display: flex;
+  justify-content: center;
+}
+
+
+/* card img  */
+.buttonnn{
+  position: relative;
+  
+}
+
+#play-buttonn{
+  padding: 10px 12px;
+  background: #0d6efd;
+  color: #ffff;
+  text-align: center;
+  margin: 5px 0px;
+  cursor: pointer;
+  border-radius: 0.25rem;
+}
+
+#play-buttonnn{
+  padding: 10px 12px;
+  background: #0d6efd;
+  color: #ffff;
+  text-align: center;
+  margin: 5px 0px;
+  cursor: pointer;
+  border-radius: 0.25rem;
+}
+#play-buttonnnm{
+  padding: 10px 12px;
+  background: #0d6efd;
+  color: #ffff;
+  text-align: center;
+  margin: 5px 0px;
+  cursor: pointer;
+  border-radius: 0.25rem;
+}
+
+.bg-modal{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  /* background-color: rgb(0, 0, 0, 0.8); */
+  top: 0;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  position: relative;
+  right: 22px;
+}
+.bg-modall{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  /* background-color: rgb(0, 0, 0, 0.8); */
+  top: 0;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  position: relative;
+  right: 22px;
+}
+.bg-modallm{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  /* background-color: rgb(0, 0, 0, 0.8); */
+  top: 0;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  position: relative;
+  right: 22px;
+}
+
+.content-modall{
+  width: 99%;
+  height: 97%;
+  background: white;
+  border-radius: 4px;
+  position: relative;
+  padding: 20px;
+}
+
+label, select{
+  display: inline-block;
+  margin: 25px auto;
+  padding: 10px;
+  width: 200px;
+  color: #bf55ec;
+}
+
+.labor_activity{
+  text-align: center;
+}
+
+.select-styled{
+  background: #fff;
+  line-height: 1;
+  border-radius: 0;
+  text-indent: 0.01px;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  color: #2e7050;
+}
+
+form .submit{
+  margin-left: 20px;
+  align-items: center;
+}
+
+
+.closee {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 42px;
+  color: #aaaaaa;
+  float: right;
+  font-size: 17pt;
+  font-weight: bold;
+  transform: rotate(45deg);
+}
+.closeee {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 42px;
+  color: #aaaaaa;
+  float: right;
+  font-size: 17pt;
+  font-weight: bold;
+  transform: rotate(45deg);
+}
+.closeeem {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 42px;
+  color: #aaaaaa;
+  float: right;
+  font-size: 17pt;
+  font-weight: bold;
+  transform: rotate(45deg);
+}
+
+.closee:hover,
+.closee:focus {
+color: #000;
+text-decoration: none;
+cursor: pointer;
+}
+
+.closeee:hover,
+.closeee:focus {
+color: #000;
+text-decoration: none;
+cursor: pointer;
+}
+.closeeem:hover,
+.closeeem:focus {
+color: #000;
+text-decoration: none;
+cursor: pointer;
+}
+
+.mb-3{
+  position: relative;
+  margin-left: 15%;
+}
