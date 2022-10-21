@@ -118,11 +118,11 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="heroewelcome" xml:space="preserve">
-    <value>Welcome to  International Special School &lt;span&gt;Al-Kharazmi .&lt;/span&gt; </value>
+    <value>Welcome to   &lt;span&gt;Al-Kharazmi &lt;/span&gt;International Special School for gifted children</value>
     <comment/>
   </data>
   <data name="heroeadvice" xml:space="preserve">
-    <value>The best investment is an investment in to your child future!</value>
+    <value>The best investment is an investment into your child's future</value>
     <comment/>
   </data>
   <data name="heroebutton" xml:space="preserve">
@@ -130,7 +130,7 @@
     <comment/>
   </data>
   <data name="heroevideo" xml:space="preserve">
-    <value>Watch video</value>
+    <value>Watch a video</value>
     <comment/>
   </data>
   <data name="admission" xml:space="preserve">

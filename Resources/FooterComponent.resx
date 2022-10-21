@@ -122,16 +122,17 @@
     <comment/>
   </data>
   <data name="address-street" xml:space="preserve">
-    <value>Namangan district, Namangan street</value>
+    <value>17A building</value>
     <comment/>
   </data>
   <data name="address-building" xml:space="preserve">
-    <value>17A Home</value>
+    <value>Navai street</value>
     <comment/>
   </data>
   <data name="province" xml:space="preserve">
-    <value>Namangan</value>
+    <value>Kumkurgan district</value>
     <comment/>
+    >
   </data>
   <data name="email" xml:space="preserve">
     <value>Email</value>
@@ -178,7 +179,7 @@
     <comment/>
   </data>
   <data name="address-region" xml:space="preserve">
-    <value>Kumkurgan</value>
+    <value>Kumkurgan MFY</value>
     <comment/>
   </data>
   <data name="it" xml:space="preserve">
