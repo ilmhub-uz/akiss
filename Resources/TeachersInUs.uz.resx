@@ -121,7 +121,7 @@
     <value>Sitatli</value>
   </data>
   <data name="1subtitle" xml:space="preserve">
-    <value>Darsingiz sifatini oshiring va o'quvchilaringiz natijalarini yaxshilangs</value>
+    <value>Darsingiz sifatini oshiring va o'quvchilaringiz natijalarini yaxshilang</value>
   </data>
   <data name="2title" xml:space="preserve">
     <value>Qiziqarli</value>
@@ -139,6 +139,6 @@
     <value>Ustama</value>
   </data>
   <data name="4subtitle" xml:space="preserve">
-    <value>Malakangizni oshiring va maoshingizga 35~100% qo'shing</value>
+    <value>Sertifikati bor o'qituvchilar uchun ustima qo'shib beriladi.</value>
   </data>
 </root>
