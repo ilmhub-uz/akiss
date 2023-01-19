@@ -138,7 +138,7 @@
     <comment/>
   </data>
   <data name="LanInfo" xml:space="preserve">
-    <value>Darslar o’zbek, rus va ingiliz tillarida olib boriladi</value>
+    <value>Qo'shimcha ingliz, rus va arab tillari mavjud</value>
     <comment/>
   </data>
   <data name="Pre" xml:space="preserve">
@@ -154,7 +154,7 @@
     <comment/>
   </data>
   <data name="TatilInfo" xml:space="preserve">
-    <value>Yozgi ta’tilni horijiy davlatlarda o’tkazib muloqot madaniyatini oshirish</value>
+    <value>Yozgi ta’tilni horijiy davlatlarda o’tkazib muloqot madaniyatinggizni oshiring</value>
     <comment/>
   </data>
   <data name="Diplom" xml:space="preserve">
@@ -162,7 +162,7 @@
     <comment/>
   </data>
   <data name="DiplomInfo" xml:space="preserve">
-    <value>Maktab attestati va diplomlar beriladi</value>
+    <value>Maktab attestati va diplom beriladi</value>
     <comment/>
   </data>
   <data name="Girls" xml:space="preserve">
@@ -194,7 +194,7 @@
     <comment/>
   </data>
   <data name="ParentsInfo" xml:space="preserve">
-    <value>Ota-onalar tomonidan dars jarayoni onlayn kuzatish imkoniyati</value>
+    <value>Ota-onalar tomonidan dars jarayoni maktab hududida ofline kuzatish imkoniyati</value>
     <comment/>
   </data>
   <data name="Pupil" xml:space="preserve">
