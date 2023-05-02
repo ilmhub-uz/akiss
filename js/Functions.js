@@ -27,7 +27,7 @@ function Send_Data(){
 }
 
 function Send_Admission_Data(){
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbz-6KMQl4HVnrwQgV4bJuiJ5ZKKgydtcO39K3Y9TrxFHyGZk0biSbF2Y6r0OqIt-oZXOQ/exec'
+    const scriptURL ='https://script.google.com/macros/s/AKfycbz57K_BK75iFBAtUq9pVsF5naD-sAdEpiOV8GufAhv4dAZgaXByPjjwQbe8KhahEhoCtg/exec'
   const form = document.forms['admission-form']
   form.addEventListener('submit',e => {
     e.preventDefault()
@@ -36,8 +36,8 @@ function Send_Admission_Data(){
   setTimeout(function () {
     document.getElementById("adbtn").removeAttribute('disabled');
   }, 3000);
-
-  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+    console.log("ketdi");
+    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
     .then(response => document.getElementById("res_success").removeAttribute("hidden"))
     .catch(error => document.getElementById("res_error").removeAttribute("hidden"))
     .then(document.getElementById("admission-form").reset())
@@ -48,6 +48,7 @@ function Send_Admission_Data(){
       document.getElementById("res_success").setAttribute("hidden","hidden");
       document.getElementById("res_error").setAttribute("hidden","hidden");
     }, 4500))
+    console.log("oxirgi methodla ishladi");
 }
 
 function Send_Team_Data(){
