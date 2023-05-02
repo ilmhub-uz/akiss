@@ -3,8 +3,8 @@ $("#files").change(function() {
   console.log(filename);
 });
 
-function Send_Data(){
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbz4a8j71O6-2j-EAb8vEBbv28vmgip75OWD-t0K8xmd4f5LYU1TA2_JL1ib_e18L3qMSA/exec'
+function Send_Contacts_Data(){
+    const scriptURL = 'https://script.google.com/macros/s/AKfycby6OUNN78NrdE_3bt9IxcnG__GUPSndafBVTVHeeJ-mlalaw3WlsWgyW0nfSQA-puFv_Q/exec'
     const form = document.forms['contact-form']
     form.addEventListener('submit',e => {
       e.preventDefault()
@@ -36,7 +36,7 @@ function Send_Admission_Data(){
   setTimeout(function () {
     document.getElementById("adbtn").removeAttribute('disabled');
   }, 3000);
-    console.log("ketdi");
+    
     fetch(scriptURL, { method: 'POST', body: new FormData(form) })
     .then(response => document.getElementById("res_success").removeAttribute("hidden"))
     .catch(error => document.getElementById("res_error").removeAttribute("hidden"))
@@ -48,11 +48,11 @@ function Send_Admission_Data(){
       document.getElementById("res_success").setAttribute("hidden","hidden");
       document.getElementById("res_error").setAttribute("hidden","hidden");
     }, 4500))
-    console.log("oxirgi methodla ishladi");
+
 }
 
-function Send_Team_Data(){
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbzLlZR6wsfboexUtu3fofPt5DLfEwpjzSO462MuFQ9IDA7pNqS1mL2alQPfORVpjWpt/exec'
+function Send_Teachers_Data(){
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxjBsW8gJXh6OwTrXns7n7o2DaXqZCXRpOjSAJb-MEl6BVisi5I9nyjpFlk7qupn6h7/exec'
   const form = document.forms['teacher-form']
   form.addEventListener('submit', e => {
     e.preventDefault()
