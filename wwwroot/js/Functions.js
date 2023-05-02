@@ -19,7 +19,7 @@ function Send_Contacts_Data(){
       .catch(error => document.getElementById("res_err").removeAttribute("hidden"))
       .then(document.getElementById("contact-form").reset())
       .then( document.getElementById("name").classList.remove('is-valid'))
-      .then( document.getElementById("email").classList.remove('is-valid'))
+      .then(document.getElementById("phone_number").classList.remove('is-valid'))
       .finally(setTimeout(function(){
         document.getElementById("res_suc").setAttribute("hidden","hidden");
         document.getElementById("res_err").setAttribute("hidden","hidden");
