@@ -52,7 +52,7 @@ function Send_Admission_Data(){
 }
 
 function Send_Teachers_Data(){
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbxjBsW8gJXh6OwTrXns7n7o2DaXqZCXRpOjSAJb-MEl6BVisi5I9nyjpFlk7qupn6h7/exec'
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwxWd65XyAo13ZA6wK9ZLlKb6-c80cQI-oynrJsxRqJgQP8v0VIEjc_Hm2vN0kC35kGqw/exec'
   const form = document.forms['teacher-form']
   form.addEventListener('submit', e => {
     e.preventDefault()
