@@ -6,7 +6,8 @@ function ValidationIcon(inputName){
       document.getElementById(inputName).classList.remove('is-invalid');
       document.getElementById(inputName).classList.add('is-valid');
     }
-  }
+}
+
 function ActiveStatus(){
 $('.nav-link').on('click',function(){
   $('.nav-link').removeClass('active');
