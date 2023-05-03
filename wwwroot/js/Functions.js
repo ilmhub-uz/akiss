@@ -61,6 +61,7 @@ function Send_Teachers_Data(){
   setTimeout(function () {
     document.getElementById("teachbtn").removeAttribute('disabled');
   }, 3000);
+    console.log("data ketdi");
  
   fetch(scriptURL, { method: 'POST', body: new FormData(form)})
     .then(response => document.getElementById("res_suc").removeAttribute("hidden"))
@@ -70,6 +71,7 @@ function Send_Teachers_Data(){
       document.getElementById("res_err").setAttribute("hidden","hidden");
     }, 4500))
 
+    console.log("data tozalandi");
   form.addEventListener("submit", (e) => {
       e.preventDefault();
   });
