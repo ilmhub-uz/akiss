@@ -1,7 +1,7 @@
-//$("#files").change(function() {
-//  filename = this.files[0].name;
-//  console.log(filename);
-//});
+$("#files").change(function() {
+  filename = this.files[0].name;
+  console.log(filename);
+});
 
 function Send_Contacts_Data(){
     const scriptURL = 'https://script.google.com/macros/s/AKfycby6OUNN78NrdE_3bt9IxcnG__GUPSndafBVTVHeeJ-mlalaw3WlsWgyW0nfSQA-puFv_Q/exec'
@@ -61,7 +61,7 @@ function Send_Teachers_Data(){
   setTimeout(function () {
     document.getElementById("teachbtn").removeAttribute('disabled');
   }, 3000);
-    console.log("data ketdi");
+ 
  
   fetch(scriptURL, { method: 'POST', body: new FormData(form)})
     .then(response => document.getElementById("res_suc").removeAttribute("hidden"))
@@ -71,29 +71,34 @@ function Send_Teachers_Data(){
       document.getElementById("res_err").setAttribute("hidden","hidden");
     }, 4500))
 
-    console.log("data tozalandi");
+
   form.addEventListener("submit", (e) => {
       e.preventDefault();
   });
-  
-  const file = document.getElementById("uploadfile").files[0];
-  const fr = new FileReader();
-  fr.readAsArrayBuffer(file);
-  fr.onload = (f) => {
-    const url = "https://script.google.com/macros/s/AKfycbytdR4ODfVxMH-IJImEPDP1ED8WfTZYQ4CD98JM6VBvSibgN7gms_9cpO5jMEzjem7JQQ/exec"; 
-    const qs = new URLSearchParams({
-      filename: file.name,
-      mimeType: file.type,
-    });
-    fetch(`${url}?${qs}`, {method: "POST", body: JSON.stringify([...new Int8Array(f.target.result)])})
-      .then(res =>document.getElementById("teacher-form").reset())
-      .then( document.getElementById("name").classList.remove('is-valid'))
-      .then( document.getElementById("phone").classList.remove('is-valid'))
-      .then( document.getElementById("email").classList.remove('is-valid'))
-      .then( document.getElementById("ExperienceInYears").classList.remove('is-valid'))
-      .catch(res => console.log("Error"))
-      .finally(document)
-  };
+
+    const file = document.getElementById("uploadfile").files[0];
+    const fr = new FileReader();
+    fr.readAsArrayBuffer(file);
+    fr.onload = (f) => {
+        const url = "https://script.google.com/macros/s/AKfycbx_XaoLRLeOpcZ0ut6ZfYfBDkrVHlP-oYKylb1fEg-PE6gDAClxn47nl9CETHtJjfEU/exec";
+        const data = {
+            filename: file.name,
+            mimeType: file.type,
+            content: btoa([...new Uint8Array(f.target.result)].reduce((s, byte) => s + String.fromCharCode(byte), ''))
+        };
+        fetch(url, {
+            method: "POST",
+            body: JSON.stringify(data)
+        })
+            .then(res => console.log("File uploaded to Google Drive folder!"))
+            .then(res => document.getElementById("teacher-form").reset())
+            .then( document.getElementById("name").classList.remove('is-valid'))
+            .then( document.getElementById("phone").classList.remove('is-valid'))
+            .then( document.getElementById("email").classList.remove('is-valid'))
+            .then( document.getElementById("ExperienceInYears").classList.remove('is-valid'))
+            .catch(err => console.error("Error uploading file: ", err));
+    };
+
 }
 
 function BlazorScrollToId(id) {
