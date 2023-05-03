@@ -52,7 +52,7 @@ function Send_Admission_Data(){
 }
 
 function Send_Teachers_Data(){
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbxjBsW8gJXh6OwTrXns7n7o2DaXqZCXRpOjSAJb-MEl6BVisi5I9nyjpFlk7qupn6h7/exec'
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwoS6W_ageGe6yRpR-G6JmpJ0Vst7bEPjKLXqamqXP0EJkb9pRK9n2oxGYc79HFeBG1oA/exec'
   const form = document.forms['teacher-form']
   form.addEventListener('submit', e => {
     e.preventDefault()
@@ -61,6 +61,7 @@ function Send_Teachers_Data(){
   setTimeout(function () {
     document.getElementById("teachbtn").removeAttribute('disabled');
   }, 3000);
+    console.log("data ketdi");
  
   fetch(scriptURL, { method: 'POST', body: new FormData(form)})
     .then(response => document.getElementById("res_suc").removeAttribute("hidden"))
@@ -70,6 +71,7 @@ function Send_Teachers_Data(){
       document.getElementById("res_err").setAttribute("hidden","hidden");
     }, 4500))
 
+    console.log("data tozalandi");
   form.addEventListener("submit", (e) => {
       e.preventDefault();
   });
