@@ -90,13 +90,14 @@ function Send_Teachers_Data(){
             method: "POST",
             body: JSON.stringify(data)
         })
-            .then(res => console.log("File uploaded to Google Drive folder!"))
-            .then(res => document.getElementById("teacher-form").reset())
-            .then( document.getElementById("name").classList.remove('is-valid'))
-            .then( document.getElementById("phone").classList.remove('is-valid'))
-            .then( document.getElementById("email").classList.remove('is-valid'))
-            .then( document.getElementById("ExperienceInYears").classList.remove('is-valid'))
-            .catch(err => console.error("Error uploading file: ", err));
+        .then(res => console.log("File uploaded to Google Drive folder!"))
+        .then(res => document.getElementById("teacher-form").reset())
+        .then( document.getElementById("name").classList.remove('is-valid'))
+        .then( document.getElementById("phone").classList.remove('is-valid'))
+        .then( document.getElementById("email").classList.remove('is-valid'))
+        .then( document.getElementById("ExperienceInYears").classList.remove('is-valid'))
+        .catch(err => console.error("Error uploading file: ", err))
+        .finally(document);
     };
 
 }
